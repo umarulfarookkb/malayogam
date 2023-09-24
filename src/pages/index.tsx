@@ -101,10 +101,17 @@ function OurServicesSection() {
               <Card className='w-fit'>
                 <CardHeader className='p-5'>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  {/* <img
                     src={service.image}
                     alt={service.name}
                     className=' rounded-xl'
+                  /> */}
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    height={412}
+                    width={412}
+                    className='rounded-lg bg-contain '
                   />
                 </CardHeader>
                 <CardContent>
@@ -151,10 +158,16 @@ function PublicationCard() {
     <Card className='w-fit'>
       <CardHeader className='p-2'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        {/* <img
           src='/assets/images/publications.png'
           alt='publication'
           className=''
+        /> */}
+        <Image
+          src='/assets/images/publications.png'
+          alt='publication'
+          height={412}
+          width={412}
         />
       </CardHeader>
       <CardContent>

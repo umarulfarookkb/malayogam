@@ -26,7 +26,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <div className='embla'>
-      <div className='overflow-hidden' ref={emblaRef}>
+      <div className=' overflow-hidden' ref={emblaRef}>
         <div className='embla__container w-[40rem] md:w-full'>
           {data.map((item, i) => (
             <div className='embla__slide' key={i}>
