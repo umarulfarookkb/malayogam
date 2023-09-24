@@ -4,6 +4,8 @@ import { APP_NAME } from "@/utils/constants";
 import type { AppProps } from "next/app";
 
 import "@/styles/globals.css";
+import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 
 const primaryFont = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -21,25 +23,25 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>{TITLE}</title>
-        <meta name="description" content={DESCRIPTION} />
-        <meta name="theme-color" content="#111111" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content={WEBSITE_URL} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESCRIPTION} />
+        <meta name='description' content={DESCRIPTION} />
+        <meta name='theme-color' content='#111111' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta property='og:url' content={WEBSITE_URL} />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content={TITLE} />
+        <meta property='og:description' content={DESCRIPTION} />
         <meta
-          property="og:image"
+          property='og:image'
           content={`${WEBSITE_URL}/android-chrome-512x512.png`}
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={TITLE} />
-        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={TITLE} />
+        <meta name='twitter:description' content={DESCRIPTION} />
         <meta
-          name="twitter:image"
+          name='twitter:image'
           content={`${WEBSITE_URL}/android-chrome-512x512.png`}
         />
-        <meta name="twitter:url" content={WEBSITE_URL} />
+        <meta name='twitter:url' content={WEBSITE_URL} />
       </Head>
 
       <style jsx global>{`
@@ -48,8 +50,9 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${primaryFont.style.fontFamily};
         }
       `}</style>
-
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

@@ -5,6 +5,8 @@
     "twmerge",
     "tanstack",
     "tailwind",
-    "tailwindcss"
+    "tailwindcss",
+    "lucide",
+    "webp"
   ]
 }
