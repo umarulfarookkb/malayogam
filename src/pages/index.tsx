@@ -289,7 +289,7 @@ const TestimonialsSection = () => {
       <div className='container pb-10 sm:px-9'>
         {/* <div> */}
         <h4 className='mb-8 text-xl font-semibold text-black md:text-3xl'>
-          Testimonials
+          Matrimonial Moments
         </h4>
         <EmblaCarousel data={data} options={OPTIONS} />
         {/* </div> */}
