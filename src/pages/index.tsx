@@ -38,7 +38,7 @@ function HeroSection() {
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className='container mb-6 rounded-md bg-[#f7f5fd] px-9 pb-20 pt-16 md:mt-4'
+      className='container mb-6 rounded-md bg-[#f7f5fd] pb-20 pt-16 sm:px-9 md:mt-4'
     >
       <div className='flex flex-col items-center justify-between gap-5 md:flex-row md:gap-8'>
         <div>
@@ -76,7 +76,7 @@ function OurServicesSection() {
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className='container mb-6  bg-white px-9 pb-20 pt-16'
+      className='container mb-6  bg-white pb-20 pt-16 sm:px-9'
     >
       <div>
         <h4 className='mb-8 text-xl font-semibold text-black md:text-3xl'>
@@ -136,13 +136,13 @@ function OurPublications() {
       exit={{ opacity: 0, scale: 0.9 }}
       className='mb-6 rounded-md bg-[#f7f5fd] '
     >
-      <div className='container px-9 pb-20 pt-16'>
+      <div className='container pb-20 pt-16 sm:px-9'>
         <div>
           <h4 className='mb-8 text-xl font-semibold text-black md:text-3xl'>
             Our Publications
           </h4>
         </div>
-        <div className='grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4'>
           <PublicationCard />
           <PublicationCard />
           <PublicationCard />
@@ -171,7 +171,7 @@ function PublicationCard() {
         />
       </CardHeader>
       <CardContent>
-        <CardTitle className='text-center text-xl font-semibold'>
+        <CardTitle className='text-center text-sm font-semibold sm:text-xl'>
           MALAYOGAM
         </CardTitle>
       </CardContent>
@@ -225,7 +225,7 @@ const services = [
 
 function FAQSection() {
   return (
-    <section className='container mb-6 px-9 pb-20 pt-16'>
+    <section className='container mb-6 pb-20 pt-16 sm:px-9'>
       <h4 className='text-xl font-semibold text-black md:text-3xl'>
         Frequently Asked Questions
       </h4>
@@ -286,7 +286,7 @@ const TestimonialsSection = () => {
   };
   return (
     <section className='container px-1'>
-      <div className='container px-9 pb-10'>
+      <div className='container pb-10 sm:px-9'>
         {/* <div> */}
         <h4 className='mb-8 text-xl font-semibold text-black md:text-3xl'>
           Testimonials
